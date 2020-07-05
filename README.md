@@ -62,7 +62,7 @@ In order to allow the agent to learn, I coded two algorithms:
 * DQN
 * Double DQN
 
-#### Encironment Setup
+#### Environment Setup
 * Banana.app
 * Number of agents: 1
 * Number of actions: 4
