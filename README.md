@@ -129,7 +129,7 @@ The act of sampling a small batch of tuples from the replay buffer in order to l
 
 ##### Fixed Targets 
 
-In Q-Learning, we update a guess with a guess, and this can potentially lead to harmful correlations. To avoid this, we can update the parameters $w$ in the network $\hat{q}$ to better approximate the action value corresponding to state $$ and action $A$ with the following update rule:
+In Q-Learning, we update a guess with a guess, and this can potentially lead to harmful correlations. To avoid this, we can update the parameters $w$ in the network $\hat{q}$ to better approximate the action value corresponding to state $S$ and action $A$ with the following update rule:
 
 $\Delta w = \alpha \cdot \overbrace{( \underbrace{R + \gamma \max_a\hat{q}(S', a, w^-)}_{\rm {TD~target}} - \underbrace{\hat{q}(S, A, w)}_{\rm {old~value}})}^{\rm {TD~error}} \nabla_w\hat{q}(S, A, w)$
 
